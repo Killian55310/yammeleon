@@ -1,0 +1,158 @@
+@media (width < 1600px) {
+    header > .home {
+        background-size: 130vw;
+        background-position-x: -15vw;
+        background-position-y: -30vh;
+    }
+    article div img {
+        height: 150%;
+    }
+    .col .into-col {
+        flex-direction: column-reverse !important;
+    }
+    .col .into-col > * {
+        width: 70%;
+        align-self: center;
+    }
+    .col .into-col img {
+        width: 50vw;
+        height: auto;
+    }
+}
+@media (width < 1350px) {
+    header > .home, #bg {
+        background-size: 150vw;
+        background-position-x: -25vw;
+    }
+    header > .home > h1 {
+        font-size: 4rem;
+    }
+    .into-col {
+        flex-direction: column-reverse !important;
+    }
+    .into-col > * {
+        width: 70%;
+        align-self: center;
+    }
+    h2 {
+        text-align: center;
+    }
+}
+@media (width < 1200px) {
+    header nav {
+        background-color: rgb(30,30,30);
+    }
+    header:has(.home) > * {
+        position: static;
+    }
+    header:has(.home) {
+        height: auto;
+    }
+    header > .home {
+        display: none;
+    }
+    h1 {
+        font-size: 5rem;
+    }
+    article {
+        padding-inline: 10vw !important;
+    }
+}
+@media (width < 1000px) {
+    #bg {
+        display: none;
+    }
+    h1 {
+        font-size: 4.5rem;
+    }
+    q {
+        font-size:2rem;
+    }
+    article.transparent {
+        background-color: rgb(50,50,50);
+    }
+    .into-col > * {
+        width: 85%;
+    }
+}
+@media (width < 900px) {
+    nav .logo {
+        display: none;
+    }
+    h1 {
+        font-size: 3.5rem;
+    }
+    article:has(q) {
+        padding: 2rem 10vw;
+    }
+    q {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+}
+@media (width < 700px) {
+    nav > ul {
+        display: none;
+    }
+    article:has(h1) {
+        display: none;
+    }
+    .col .into-col img {
+        width: 70vw;
+    }
+    nav #burger {
+        width: var(--header-height);
+        height: var(--header-height);
+        display: block;
+    }
+    nav > ul.opened {
+        display: block;
+        position: absolute;
+        top: var(--header-height);
+        background-color: rgb(60,60,60);
+    }
+}
+@media (width < 550px) {
+    nav > ul * {
+        font-size: 1rem;
+    }
+    article {
+        padding-inline: 3vw !important;
+    }
+    article:has(q) {
+        padding: 2rem 10vw;
+    }
+    q {
+        font-size: 1rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1.1rem;
+    }
+    a {
+        font-size: 1.5rem;   
+    }
+}
+@media (width < 500px) {
+    h2 {
+        font-size: 1.8rem;
+    }
+}
+@media (width < 400px) {
+    nav > ul * {
+        font-size: 0.7rem;
+    }
+    h2 {
+        font-size: 1.4rem;
+    }
+    p {
+        font-size: 0.9rem;
+    }
+    a {
+        font-size: 1.1rem;   
+    }
+}
